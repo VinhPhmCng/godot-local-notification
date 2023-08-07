@@ -123,7 +123,7 @@ if LocalNotification.isPermissionGranted():
   LocalNotification.show(title, message, 30, 10)
 ```
 
-"Why do I have to call `init()`?" Well, if you don't want to, you can change `init()` to `_ready()` on the `autoload` file. But in my experience, when using a lot of plugin, initializing all plugins on `_ready()` is not a good idea. This way, you can choose whenever to initialize the plugin e.g. when showing a loading scene, etc.
+"Why do I have to call `init()`?" Well, if you don't want to, you can change `init()` to `_ready()` in the `autoload` file. But in my experience, when using a lot of plugins, initializing all plugins on `_ready()` is not a good idea. This way, you can choose whenever to initialize the plugin e.g. when showing a loading scene, etc.
 
 For more details, see [examples](./example/).
 
@@ -175,7 +175,7 @@ With only one command, you can build and release this plugin. Read [DEVELOP.md](
 
 If you find bugs, please open issues.
 
-If you have time to fix bugs or improve the plugins, please open a PR. It's always welcomed and appreciated.
+If you have time to fix bugs or improve the plugins, please open PR. It's always welcomed and appreciated.
 
 # License
 
